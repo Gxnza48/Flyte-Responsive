@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      href="https://static.vecteezy.com/system/resources/previews/009/342/338/non_2x/thunderbolt-clipart-design-illustration-free-png.png"
+      type="image/png"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>FLYTE</title>
+  </head>
+  <body>
+    <section class="main-section">
+      <header>
+        <div class="menu">
+          <nav>
+            <h1 class="logo">FLYTΞ</h1>
+            <ul class="desktop-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#contact-panel">Contact Us</a></li>
+              <li>
+                <input
+                  class="search"
+                  type="search"
+                  placeholder="Type here to Search..."
+                />
+                <button>Search</button>
+              </li>
+            </ul>
+            <div>
+              <span class="material-icons burger-menu" onclick="toggleMenu()">
+                menu
+              </span>
+            </div>
+            <div class="space"></div>
+          </nav>
+          <ul class="mobile-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#contact-panel">Contact Us</a></li>
+            <li class="search-bar">
+              <input
+                class="search"
+                type="search"
+                placeholder="Type here to Search..."
+              />
+              <button>Search</button>
+            </li>
+          </ul>
+        </div>
+        <div></div>
+      </header>
+      <div class="info-cards">
+        <div class="info-card">
+          <h2>Ingredents</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+            eveniet deleniti aperiam repellat optio esse, nostrum error
+            architecto voluptatem fugiat non earum doloremque neque, quod
+            assumenda! Perferendis in asperiores quod!
+          </p>
+        </div>
+        <div class="info-card">
+          <h2>Tastes</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            sit exercitationem hic. Eius dolorem quod dolores praesentium velit
+            cum pariatur adipisci placeat, eveniet vitae odit voluptate aperiam
+            quisquam optio veniam.
+          </p>
+        </div>
+        <div class="info-card">
+          <h2>Colors</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi rem
+            animi aliquam explicabo doloremque error odio eveniet fuga non
+            facere labore expedita voluptate, iste ipsum fugit consectetur
+            perspiciatis id praesentium!
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="second-section">
+      <h1 class="about">About Us</h1>
+      <div class="info-cards">
+        <div class="info-card">
+          <h2>Work</h2>
+          <p>
+            We are dedicated to using the finest and freshest ingredients in all
+            of our products. Our commitment to quality ensures that you enjoy
+            the best flavors and experiences.
+          </p>
+        </div>
+        <div class="info-card">
+          <h2>Our Team</h2>
+          <p>
+            Our team of experienced chefs and food experts work tirelessly to
+            create unique and delicious tastes that delight your palate. We aim
+            to provide a culinary adventure with every bite.
+          </p>
+        </div>
+        <div class="info-card">
+          <h2>At FLYTΞ</h2>
+          <p>
+            At FLYTE, we believe that food should not only taste amazing but
+            also be visually appealing. Our dishes are a burst of colors,
+            reflecting our passion for artful presentation.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="third-section">
+      <h2>Recycling</h2>
+      <div class="info-cards info-cards-3">
+        <div class="info-card">
+          <h2>How we Recycle</h2>
+          <p>
+            Flyte is passionate about sustainability. We prioritize recycling
+            and eco-friendly practices in our operations, from responsible
+            sourcing to recyclable packaging.
+          </p>
+        </div>
+        <div class="info-card">
+          <h2>Our Energy Focus</h2>
+          <p>
+            Flyte is all about energizing you with natural ingredients. Join our
+            sustainable energy mission for a refreshing boost!
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h1 class="flogo">FLYTΞ</h1>
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#contact-panel">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2023 FLYTE. All rights reserved.</div>
+    </footer>
+    <div id="contact-panel" class="contact-panel">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" /><br /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" /><br /><br />
+
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="4" cols="50"></textarea
+        ><br /><br />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

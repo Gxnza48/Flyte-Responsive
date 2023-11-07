@@ -1,0 +1,373 @@
+/* Estilos generales */
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+
+/* Resto de tus estilos */
+
+.main-section {
+    background-image: url('https://worldbranddesign.com/wp-content/uploads/2019/04/mousegraphics---Flyte7.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.second-section {
+    background-image: url('https://www.yogibanker.com/wp-content/uploads/2019/07/Red-Berries-new-can.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.second-section .about {
+    text-align: center;
+}
+
+/* Estilos para la tercera sección "Recycling" */
+.third-section {
+    background-image: url('https://m.media-amazon.com/images/I/61tKRmxAQTL.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.third-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.recycling-image img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+/* Estilos para el pie de página (footer) */
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo h1 {
+    font-size: 24px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+}
+
+.footer-bottom {
+    margin-top: 10px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.flogo {
+    margin-left: 5px;
+    cursor: default;
+    
+}
+
+.flogo:hover {
+    color: green;
+    
+}
+
+.logo {
+    color: white;
+    width: 300px;
+    height: 55px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: green;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position:relative;
+    transition:0.7s;
+}
+
+.logo:hover {
+    transform: translateY(10px);
+}
+
+
+nav {
+    padding: 45px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>.desktop-links {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: rgb(21, 255, 0);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.4s;
+}
+
+a:hover::before {
+    width: 100%;
+}
+
+.search {
+    background-color: rgb(148, 148, 148);
+    border-radius: 15px;
+    outline: none;
+    border: 2px solid white;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+}
+
+.search::placeholder {
+    color: white;
+}
+
+button {
+    background-color: rgb(148, 148, 148);
+    border-radius: 15px;
+    outline: none;
+    border: 2px solid white;
+    padding: 8px;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: rgb(58, 226, 43);
+}
+
+.info-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.info-card {
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(30px);
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.3s;
+    height: 200px;
+}
+
+.info-card h2 {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.info-card p {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.about {
+    color: white;
+    text-align: center;
+}
+
+.info-cards-3 {
+    padding: 0 200px;
+}
+
+/* Resto de los estilos permanecen igual */
+
+.contact-panel {
+    display: none;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    background: #494949;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 1000;
+    border-radius: 10px;
+}
+
+.contact-panel h2 {
+    font-size: 24px;
+    color: #009908;
+}
+
+.contact-panel form {
+    text-align: center;
+    color: white;
+}
+
+.contact-panel input[type="text"],
+.contact-panel input[type="email"],
+.contact-panel textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 20px;
+}
+
+.contact-panel input[type="submit"] {
+    background-color: #868686;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 15px;
+}
+
+.contact-panel input[type="submit"]:hover {
+    background-color: #29cc00;
+}
+
+.burger-menu,
+.mobile-links {
+    display: none;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .logo {
+        max-width: 30%;
+    }
+
+    li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .info-cards {
+        flex-direction: column;
+    }
+
+    .info-card {
+        width: 90%;
+        margin: 10px 5%;
+        height: auto;
+    }
+
+    .info-cards-3 {
+        padding: 0;
+    }
+
+    .main-section,
+    .second-section,
+    .third-section {
+        height: auto;
+        background-attachment: scroll;
+    }
+
+    .burger-menu {
+        display: block;
+        color: white;
+        cursor: pointer;
+    }
+
+    nav>.desktop-links,
+    .space {
+        display: none;
+    }
+
+    .mobile-links {
+        height: 0px;
+        overflow: hidden;
+        transition: all ease-out 250ms;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.2);
+        cursor: pointer;
+    }
+
+    /*  .mobile-links a {
+        color: black;
+
+    } */
+
+    .search-bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+
+}
